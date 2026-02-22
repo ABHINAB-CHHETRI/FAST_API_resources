@@ -1,0 +1,6 @@
+# BASIC CODES
+
+python3 -venv venv venv
+source venv/bin/activate
+pip install fastapi uvicorn
+pip freeze > requirements.txt
