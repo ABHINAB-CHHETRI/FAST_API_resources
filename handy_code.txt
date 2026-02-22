@@ -1,6 +1,21 @@
-# BASIC CODES
+# Handy Cheat Codes
 
 python3 -venv venv venv
 .\venv\Scripts\Activate.ps1
 pip install fastapi uvicorn
 pip freeze > requirements.txt
+
+uvicorn main:app --reload
+
+# Basic Code
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def hello():
+    return {'message':'hello world'}
+
+@app.get("/about")
+def hello():
+    return{'message':'about page'}
